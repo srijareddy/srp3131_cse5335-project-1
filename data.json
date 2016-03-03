@@ -1,0 +1,65 @@
+{
+  "foodName": "Icecream & types",
+  "foods": [
+	{
+		"foodID": "1",
+		"foodName": "Cookies & Cream",
+		"availability": "Yes",
+		"restaurantID": "501"
+	},
+	{
+		"foodID": "2",
+		"foodName": "Strawberry",
+		"availability": "Yes",
+		"restaurantID": "502"
+	},
+	{
+		"foodID": "3",
+		"foodName": "Butterscotch",
+		"availability": "Yes",
+		"restaurantID": "503"
+	},
+	{
+		"foodID": "4",
+		"foodName": "Dark Chocolate",
+		"availability": "Yes",
+		"restaurantID": "504"
+	},
+	{
+		"foodID": "5",
+		"foodName": "Mint Chocochip",
+		"availability": "No",
+		"restaurantID": "505"
+	},
+	{
+		"foodID": "6",
+		"foodName": "Vanilla",
+		"availability": "No",
+		"restaurantID": "506"
+	},
+	{
+		"foodID": "7",
+		"foodName": "Chocolate",
+		"availability": "No",
+		"restaurantID": "507"
+	},
+	{
+		"foodID": "8",
+		"foodName": "Mango",
+		"availability": "Yes",
+		"restaurantID": "508"
+	},
+	{
+		"foodID": "9",
+		"foodName": "Fruit Exotica",
+		"availability": "Yes",
+		"restaurantID": "509"
+	},
+	{
+		"foodID": "10",
+		"foodName": "Death By Chocolate",
+		"availability": "Yes",
+		"restaurantID": "510"
+	},
+     ]
+}
