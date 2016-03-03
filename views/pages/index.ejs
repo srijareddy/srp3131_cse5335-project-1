@@ -12,13 +12,13 @@
     $("#demo").click(function(){
         
         $.get( "/data", function( data ) {
-          var cat = data.categories
-          $("table").append("<thead><tr><th>categoryID</th><th>categoryName</th></tr></thead>");
-          for (i = 0; i < cat.length; i++)
+          var f = data.foods
+          $("table").append("<thead><tr><th>FoodID</th><th>FoodName</th></tr></thead>");
+          for (i = 0; i < f.length; i++)
           {
-            var item = cat[i];
+            var item = f[i];
             
-            $("table").append("<tbody><tr><td>" + item.categoryID + "</td><td>" + item.categoryName + "</td></tr></tbody>");
+            $("table").append("<tbody><tr><td>" + item.foodID + "</td><td>" + item.foodName + "</td></tr></tbody>");
             
             
           }
