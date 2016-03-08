@@ -21,7 +21,31 @@
             $("table").append("<tbody><tr><td>" + item.foodID + "</td><td>" + item.foodName + "</td></tr></tbody>");
             
             
+            var d = [];
+            var i = 1;
+            d[0]=['foodName','sales'];
+
+            <%proj.student_details.forEach(function(item){
+                var a = ['item.foodName','item.sales'];
+                d[i]=a;
+                })%>
+
+            var data = google.visualization.arrayToDataTable(d);
+
+            var options = {
+                chart: {
+                    title: 'sales Comparision',
+
+                },
+                bars: 'horizontal' // Required for Material Bar Charts.
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+            chart.draw(data, options);
+        }
           }
+          
  
     
 }, "json" );

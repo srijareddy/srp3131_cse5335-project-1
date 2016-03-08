@@ -5,61 +5,71 @@
 		"foodID": "1",
 		"foodName": "Cookies & Cream",
 		"availability": "Yes",
-		"restaurantID": "501"
+		"restaurantID": "501",
+		"sales":"2"
 	},
 	{
 		"foodID": "2",
 		"foodName": "Strawberry",
 		"availability": "Yes",
-		"restaurantID": "502"
+		"restaurantID": "502",
+		"sales":"3"
 	},
 	{
 		"foodID": "3",
 		"foodName": "Butterscotch",
 		"availability": "Yes",
-		"restaurantID": "503"
+		"restaurantID": "503",
+		"sales":"1"
 	},
 	{
 		"foodID": "4",
 		"foodName": "Dark Chocolate",
 		"availability": "Yes",
-		"restaurantID": "504"
+		"restaurantID": "504",
+		"sales":"0"
 	},
 	{
 		"foodID": "5",
 		"foodName": "Mint Chocochip",
 		"availability": "No",
-		"restaurantID": "505"
+		"restaurantID": "505",
+		"sales":"5"
 	},
 	{
 		"foodID": "6",
 		"foodName": "Vanilla",
 		"availability": "No",
-		"restaurantID": "506"
+		"restaurantID": "506",
+		"sales":"2"
 	},
 	{
 		"foodID": "7",
 		"foodName": "Chocolate",
 		"availability": "No",
-		"restaurantID": "507"
+		"restaurantID": "507",
+		"sales":"3"
 	},
 	{
 		"foodID": "8",
 		"foodName": "Mango",
 		"availability": "Yes",
-		"restaurantID": "508"
+		"restaurantID": "508",
+		"sales":"2"
 	},
 	{
 		"foodID": "9",
 		"foodName": "Fruit Exotica",
 		"availability": "Yes",
-		"restaurantID": "509"
+		"restaurantID": "509",
+		"sales":"2"
 	},
 	{
 		"foodID": "10",
 		"foodName": "Death By Chocolate",
 		"availability": "Yes",
-		"restaurantID": "510"
+		"restaurantID": "510",
+		"sales":"1"
 	}
      ]
 }
