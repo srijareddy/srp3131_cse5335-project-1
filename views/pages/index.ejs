@@ -22,13 +22,13 @@
             
             
             var d = [];
-            var i = 1;
+            var i = 0;
             d[0]=['foodName','sales'];
 
-            <%forEach(function(item){
+            $.each(item,functio(index,value){
                 var a = ['item.foodName','item.sales'];
                 d[i]=a;
-                })%>
+                })
 
             var data = google.visualization.arrayToDataTable(d);
 
