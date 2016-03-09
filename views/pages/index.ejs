@@ -27,9 +27,10 @@
           }
          
 });
+ax();
     });
     
- ax();
+ 
 });
 
 function ax(){
@@ -44,20 +45,21 @@ $.get("/data",function(data){
     var d = [];
     d[0] = ['foodname','sales'];
     for(i=0;i<f.length;i++){
-      alert(f.foodName+" "+f.sales);
+     
     d[i+1] = [f[i].foodName,parseInt(f[i].sales)];
     }
     
       var data = google.visualization.arrayToDataTable(d);
 
       var options = {
-        title: 'Population of Largest U.S. Cities',
+        title: 'Sales Comparision',
         chartArea: {width: '50%'},
         hAxis: {
-          title: 'Total Population'
+          title: 'Sales'
         },
         vAxis: {
-          title: 'City'
+          title: 'Food Name';
+          height: 100px
         }
       };
 
