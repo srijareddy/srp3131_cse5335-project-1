@@ -17,32 +17,30 @@
         $.get( "/data", function( data ) {
           var f = data.foods
           $("table").append("<thead><tr><th>FoodID</th><th>FoodName</th></tr></thead>");
+          var d = [];
+          d[0] = ['Food Name', 'Sales'];
           for (i = 0; i < f.length; i++)
           {
             var item = f[i];
-            
+            d[i+1] = [item.foodName, item.sales];
             $("table").append("<tbody><tr><td>" + item.foodID + "</td><td>" + item.foodName + "</td></tr></tbody>");
             
           }
-         
+         ax(d);
 }, "json" );
     });
+    
+    ax();
 });
 
+function ax(d){
 google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
 
 
-      var data = google.visualization.arrayToDataTable([
-        ['City', '2010 Population',],
-        ['New York City, NY', 8175000],
-        [' Los Angeles, CA', 3792000],
-        ['Chicago, IL', 2695000],
-        ['Houston, TX', 2099000],
-        ['Philadelphia, PA', 1526000]
-      ]);
+      var data = google.visualization.arrayToDataTable(d);
 
       var options = {
         title: 'Population of Largest U.S. Cities',
@@ -62,7 +60,7 @@ function drawBasic() {
     }
 	
 
-
+}
 
   </script>
 
