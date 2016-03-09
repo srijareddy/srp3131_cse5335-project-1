@@ -21,7 +21,7 @@
           for (i = 0; i < f.length; i++)
           {
             var item = f[i];
-            d[i+1] = [item.foodName, item.sales];
+            
             $("table").append("<tbody><tr><td>" + item.foodID + "</td><td>" + item.foodName + "</td></tr></tbody>");
             
           }
@@ -29,7 +29,7 @@
 }, "json" );
     });
     
- 
+ ax();
 });
 
 function ax(){
@@ -38,7 +38,9 @@ google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
 
-
+$.get("/data",function(data){
+  alert(data);
+});
       var data = google.visualization.arrayToDataTable(d);
 
       var options = {
