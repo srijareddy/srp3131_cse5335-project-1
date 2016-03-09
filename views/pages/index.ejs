@@ -40,6 +40,8 @@ function drawBasic() {
 
 $.get("/data",function(data){
     var f = data.foods;
+    alert(f);
+    alert(JSON.parse(f));
     var d = [];
     d[0] = ['foodname','sales'];
     for(i=0;i<f.length;i++){
