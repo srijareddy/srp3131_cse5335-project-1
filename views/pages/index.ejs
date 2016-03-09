@@ -17,8 +17,7 @@
         $.get( "/data", function( data ) {
           var f = data.foods
           $("table").append("<thead><tr><th>FoodID</th><th>FoodName</th></tr></thead>");
-          var d = [];
-          d[0] = ['Food Name', 'Sales'];
+          
           for (i = 0; i < f.length; i++)
           {
             var item = f[i];
@@ -26,21 +25,23 @@
             $("table").append("<tbody><tr><td>" + item.foodID + "</td><td>" + item.foodName + "</td></tr></tbody>");
             
           }
-         ax(d);
+         
 }, "json" );
     });
     
-
+ ax();
 });
 
-function ax(d){
+function ax(){
 google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
+    $.get("/data",function(data){
+      alert(data);
+    });
 
-
-      var data = google.visualization.arrayToDataTable(d);
+      var data = google.visualization.arrayToDataTable();
 
       var options = {
         title: 'Population of Largest U.S. Cities',
