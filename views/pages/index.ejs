@@ -40,15 +40,14 @@ function drawBasic() {
 
 $.get("/data",function(data){
     var f = data.foods;
-    alert(f);
-    alert(JSON.parse(f));
+    
     var d = [];
     d[0] = ['foodname','sales'];
     for(i=0;i<f.length;i++){
       alert(f.foodName+" "+f.sales);
-    d[i+1] = [f.foodName,parseInt(f.sales)];
+    d[i+1] = [f[i].foodName,parseInt(f[i].sales)];
     }
-    //alert(d[2]);
+    
       var data = google.visualization.arrayToDataTable(d);
 
       var options = {
