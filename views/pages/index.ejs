@@ -39,7 +39,7 @@ google.charts.setOnLoadCallback(drawBasic);
 function drawBasic() {
 
 $.get("/data",function(data){
-  alert(data);
+    alert(JSON.parse(data));
 });
       var data = google.visualization.arrayToDataTable(d);
 
