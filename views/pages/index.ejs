@@ -43,6 +43,7 @@ $.get("/data",function(data){
     var d = [];
     d[0] = ['foodname','sales'];
     for(i=0;i<f.length;i++){
+      alert(f.foodName+" "+f.sales);
     d[i+1] = [f.foodName,parseInt(f.sales)];
     }
     //alert(d[2]);
