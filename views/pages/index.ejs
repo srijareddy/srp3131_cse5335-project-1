@@ -43,9 +43,9 @@ $.get("/data",function(data){
     var d = [];
     d[0] = ['foodname','sales'];
     for(i=0;i<f.length;i++){
-    d[i+1] = [f.foodName,f.sales];
+    d[i+1] = [f.foodName,parseInt(f.sales)];
     }
-    alert(d[2]);
+    //alert(d[2]);
       var data = google.visualization.arrayToDataTable(d);
 
       var options = {
