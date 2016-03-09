@@ -36,9 +36,10 @@ function ax(){
 google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawBasic);
 
+function drawBasic() {
 
 
-      var data = google.visualization.arrayToDataTable();
+      var data = google.visualization.arrayToDataTable(d);
 
       var options = {
         title: 'Population of Largest U.S. Cities',
