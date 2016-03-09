@@ -45,7 +45,7 @@ $.get("/data",function(data){
     for(i=0;i<f.length;i++){
     d[i+1] = [f.foodName,f.sales];
     }
-
+    
       var data = google.visualization.arrayToDataTable(d);
 
       var options = {
@@ -63,9 +63,9 @@ $.get("/data",function(data){
       var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
 
       chart.draw(data, options);
-    }
+    
 });	
-
+}
 }
 
   </script>
