@@ -29,10 +29,9 @@
           google.charts.load('current', {packages: ['corechart', 'bar']});
                     google.charts.setOnLoadCallback(drawBarColors);
 
-            $.each(item,function(index,value){
-                var a = ['item[index].foodName','item[index].sales'];
-                alert(item.foodName);
-                d[index]=a;
+            $.each(item,function(){
+                var a = ['this.foodName','this.sales'];
+                d[this]=a;
                 });
 
             var data = google.visualization.arrayToDataTable(d);
