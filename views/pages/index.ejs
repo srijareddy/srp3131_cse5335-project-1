@@ -5,6 +5,8 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script>
   
@@ -23,10 +25,13 @@
             
             var d = [];
             
-          
+          <div id="chart_div"></div>
+          google.charts.load('current', {packages: ['corechart', 'bar']});
+                    google.charts.setOnLoadCallback(drawBarColors);
 
-            $.each(f,function(index,value){
+            $.each(item,function(index,value){
                 var a = ['item.foodName','item.sales'];
+                alert(item.foodName);
                 d[i]=a;
                 });
 
@@ -41,7 +46,7 @@
             };
 
             var chart = new google.charts.Bar(document.getElementById('barchart_material'));
-
+    
             chart.draw(data, options);
         }
           }
