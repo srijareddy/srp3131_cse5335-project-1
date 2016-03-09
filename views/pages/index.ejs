@@ -30,9 +30,9 @@
                     google.charts.setOnLoadCallback(drawBarColors);
 
             $.each(item,function(index,value){
-                var a = ['foodName','sales'];
+                var a = ['item[index].foodName','item[index].sales'];
                 alert(item.foodName);
-                d[i]=a;
+                d[index]=a;
                 });
 
             var data = google.visualization.arrayToDataTable(d);
